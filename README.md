@@ -20,6 +20,7 @@ Este guia descreve como renomear o arquivo `script.js` para `script2.js` e atual
 #### Antes (no HTML):
 
 ```html
+
 <script src="script.js"></script>
 ```
 ### Explicação:
@@ -28,3 +29,9 @@ Este guia descreve como renomear o arquivo `script.js` para `script2.js` e atual
 - **Exemplo de Código**: Mostra a mudança do código de `script.js` para `script2.js` no arquivo HTML.
 - **Exemplo de Código 2**: Mostra a mudança do código de `index.html https://wa.me/55987654321 mude numero telefone` para `script.js ou script2.js https://wa.me/55987654321 mude numero telefone` no arquivo HTML e JAVASCRIPT.
 - **Conclusão**: Orientações finais para garantir que o processo de renomeação foi feito corretamente.
+
+### Exemplo Imagem sem botão:
+![Screenshot_14](https://github.com/user-attachments/assets/4715ac60-8745-4e28-aa97-b40cf721947a)
+
+### Exemplo Imagem com botão:
+![Screenshot_15](https://github.com/user-attachments/assets/37d351ed-944b-4906-a4c1-0fa0d2ccb67c)
