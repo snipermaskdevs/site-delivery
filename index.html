@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Delivery</h1>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/55987654321?text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido." target="_blank">
+                <img src="https://i.postimg.cc/VNZQPj1F/Pngtree-whatsapp-icon-8704827.png" alt="WhatsApp">
+            </a>
+        </div>
+    </header>
+      
+    <!-- Menu de Pizzas -->
+    <div class="menu-category">
+        <h3>Pizzas</h3>
+        <div class="item">
+            <h4>Pizza de Calabresa</h4>
+            <p>Pizza tradicional com calabresa, queijo muçarela e molho especial de tomate.</p>
+            <p>Preço: R$ 35,00</p>
+            <button class="add-to-cart" onclick="addToCart('Pizza de Calabresa', 35)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Pizza Margherita</h4>
+            <p>Deliciosa pizza com tomates frescos, manjericão e queijo mozzarella.</p>
+            <p>Preço: R$ 40,00</p>
+            <button class="add-to-cart" onclick="addToCart('Pizza Margherita', 40)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Pizza de Frango com Catupiry</h4>
+            <p>Pizza recheada com frango desfiado, catupiry e molho branco cremoso.</p>
+            <p>Preço: R$ 42,00</p>
+            <button class="add-to-cart" onclick="addToCart('Pizza de Frango com Catupiry', 42)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Pizza de 4 Queijos</h4>
+            <p>Uma mistura de quatro queijos: muçarela, gorgonzola, parmesão e provolone.</p>
+            <p>Preço: R$ 45,00</p>
+            <button class="add-to-cart" onclick="addToCart('Pizza de 4 Queijos', 45)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Menu de Aperitivos -->
+    <div class="menu-category">
+        <h3>Aperitivos</h3>
+        <div class="item">
+            <h4>Porção de Fritas</h4>
+            <p>Fritas crocantes, servidas com um molho especial de alho e ervas.</p>
+            <p>Preço: R$ 15,00</p>
+            <button class="add-to-cart" onclick="addToCart('Porção de Fritas', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Mini Pizzas de Calabresa</h4>
+            <p>Mini pizzas com calabresa, queijo muçarela e molho de tomate.</p>
+            <p>Preço: R$ 20,00</p>
+            <button class="add-to-cart" onclick="addToCart('Mini Pizzas de Calabresa', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Empanados de Frango</h4>
+            <p>Empanados crocantes com frango temperado, acompanhados de molho barbecue.</p>
+            <p>Preço: R$ 18,00</p>
+            <button class="add-to-cart" onclick="addToCart('Empanados de Frango', 18)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Bolinho de Bacalhau</h4>
+            <p>Bolinho frito recheado com bacalhau desfiado e ervas finas.</p>
+            <p>Preço: R$ 22,00</p>
+            <button class="add-to-cart" onclick="addToCart('Bolinho de Bacalhau', 22)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Menu de Calzones -->
+    <div class="menu-category">
+        <h3>Calzones</h3>
+        <div class="item">
+            <h4>Calzone de Frango</h4>
+            <p>Calzone recheado com frango desfiado, queijo e molho de tomate.</p>
+            <p>Preço: R$ 25,00</p>
+            <button class="add-to-cart" onclick="addToCart('Calzone de Frango', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Calzone de Carne Seca</h4>
+            <p>Calzone recheado com carne seca desfiada, queijo e molho especial.</p>
+            <p>Preço: R$ 28,00</p>
+            <button class="add-to-cart" onclick="addToCart('Calzone de Carne Seca', 28)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Calzone de Mussarela e Presunto</h4>
+            <p>Calzone recheado com queijo mussarela, presunto e molho de tomate.</p>
+            <p>Preço: R$ 26,00</p>
+            <button class="add-to-cart" onclick="addToCart('Calzone de Mussarela e Presunto', 26)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Calzone de Pepperoni</h4>
+            <p>Calzone recheado com fatias de pepperoni, queijo e molho picante.</p>
+            <p>Preço: R$ 30,00</p>
+            <button class="add-to-cart" onclick="addToCart('Calzone de Pepperoni', 30)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Menu de Refrigerantes -->
+    <div class="menu-category">
+        <h3>Refrigerantes</h3>
+        <div class="item">
+            <h4>Refrigerante Coca-Cola</h4>
+            <p>Refrigerante Coca-Cola, disponível em lata de 350ml.</p>
+            <p>Preço: R$ 5,00</p>
+            <button class="add-to-cart" onclick="addToCart('Refrigerante Coca-Cola', 5)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Refrigerante Fanta Laranja</h4>
+            <p>Refrigerante Fanta Laranja, disponível em lata de 350ml.</p>
+            <p>Preço: R$ 5,00</p>
+            <button class="add-to-cart" onclick="addToCart('Refrigerante Fanta Laranja', 5)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Refrigerante Guaraná Antártica</h4>
+            <p>Refrigerante Guaraná Antártica, disponível em lata de 350ml.</p>
+            <p>Preço: R$ 5,00</p>
+            <button class="add-to-cart" onclick="addToCart('Refrigerante Guaraná Antártica', 5)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h4>Refrigerante Sprite</h4>
+            <p>Refrigerante Sprite, disponível em lata de 350ml.</p>
+            <p>Preço: R$ 5,00</p>
+            <button class="add-to-cart" onclick="addToCart('Refrigerante Sprite', 5)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Carrinho de Compras -->
+    <section class="cart">
+        <h2>Carrinho</h2>
+        <ul id="cart-items">
+            <!-- Itens do carrinho serão listados aqui -->
+        </ul>
+        <p>Total: R$ <span id="total-price">0,00</span></p>
+        <button id="checkout-button" onclick="checkout()">Finalizar Pedido</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Delivery de Pizzas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
